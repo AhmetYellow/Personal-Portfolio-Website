@@ -1,281 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahmet Sari | Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Ahmet Sari</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav> 
 
-    <nav id="hamburger-nav">
-        <div class="logo">Ahmet Sari</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()" >
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section_pic-container">
-            <img src="./assets/profile-pic.png" alt="profile picture">
-        </div>
-        <div class="section_text">
-            <p class="section_text_p1">Hello, I'm</p>
-            <h1 class="title">Ahmet Sari</h1>
-            <p class="section_text_p2">Full-Stack Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" 
-                onclick="window.open('./assets/ahmet_sari_resume.pdf')">Resume</button>
-                <button class="btn btn-color-1" 
-                onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" 
-                alt="My LinkedIn profile"
-                class="icon" 
-                onclick="location.href='https://www.linkedin.com/in/ahmetsr/'"
-                />
-                <img src="./assets/github.png" 
-                alt="My Github Link"
-                class="icon" 
-                onclick="location.href='https://github.com/ahmetyellow'"
-                />
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" 
-        class="icon arrow" 
-        onclick="location.href='./#about'"/>
-    </section>
-    <section id="about">
-        <p class="section_text_p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img src="./assets/me.jpg" 
-                alt="Profile Picture" 
-                class="about-pic"/>
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" 
-                        class="icon">
-                        <h3>Experience</h3>
-                        <p>Full-Stack Development</p>
-                        <p> <i> Java, Python, JavaScript, Html, Css </i></p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" 
-                        alt="education icon" 
-                        class="icon">
-                        <h3>Education</h3>
-                        <p>Bachelors of Computer Science</p>
-                        <p>TechWise Software Engineering Program (Google)</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Hello! I'm Ahmet Sari, a Computer Science student at George Mason University, 
-                        deeply passionate about leveraging software to solve real-world problems. 
-                        I am currently honing my skills in full-stack development through the Google-sponsored TechWise program, 
-                        where I engage in projects ranging from dynamic website creation to efficient algorithm development. 
-                        My education has equipped me with robust skills in frontend and backend technologies, emphasizing practical 
-                        solutions that blend aesthetic and functional design. I am committed to continuous learning and collaboration,
-                        always eager to explore innovative solutions and share knowledge within the tech community.
-                        Join me on my journey as we innovate and transform ideas into tangible, impactful software applications. </p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" 
-        class="icon arrow" 
-        onclick="location.href='./#experience'"/>
-    </section>
-    <section id="experience">
-        <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Front End Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png"
-                             alt="Experience icon" 
-                             class="icon">
-                             <div>
-                                <h3>HTML</h3>
-                                <p>Basic</p>
-                             </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                             alt="Experience icon" 
-                             class="icon">
-                             <div>
-                                <h3>CSS</h3>
-                                <p>Basic</p>
-                             </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                             alt="Experience icon" 
-                             class="icon">
-                             <div>
-                                <h3>JavaScript</h3>
-                                <p>Learning</p>
-                             </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Back End Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png"
-                             alt="Experience icon" 
-                             class="icon">
-                             <div>
-                                <h3>Java</h3>
-                                <p>Intermediate</p>
-                             </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                             alt="Experience icon" 
-                             class="icon">
-                             <div>
-                                <h3>Python</h3>
-                                <p>Basic</p>
-                             </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                             alt="Experience icon" 
-                             class="icon">
-                             <div>
-                                <h3>Git</h3>
-                                <p>Basic</p>
-                             </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" 
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-        <p class="section_text_p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/pig_bank.png"
-                         alt="Project 1"
-                         class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Finance Tracker</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/mikey6002/Personal-Finance-Tracker'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://camo.githubusercontent.com/473a6a0f827d66f2adef4d315544de5b92c7ec93712e15b78c3daf090f1f6fb3/68747470733a2f2f692e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a457865584a34596a4a714f4735354f545279596a566d626d51315a6a423563335a6c4e5442784f544e705a7a417a636d73304d3370704e435a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f73336a734435546c36516f546b5262556e4c2f67697068792e676966'">
-                            Live Demo
-                        </button>
-                    </div> 
-                </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/grades.jpg"
-                     alt="Project 2"
-                     class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Grade Calculator</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/AhmetYellow/creative-projects/tree/main/GradeCalculator'">
-                    Github
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/atari.jpg"
-                     alt="Project 3"
-                     class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Breakout Game</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/AhmetYellow/creative-projects/tree/main/BreakoutGame'">
-                    Github
-                    </button>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" 
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'">
-    </section>
-    
-    <section id="contact">
-        <p class="section_text_p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png"
-                alt="email icon" 
-                class="icon contact-icon email-icon"/>
-                <p> <a href="mailto:ahmetsari.codes@gmail.com">ahmetsari.codes@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <div class="contact-info-container">
-                    <img src="./assets/linkedin.png"
-                    alt="linkedin icon" 
-                    class="icon contact-icon"/>
-                    <p> <a href="https://www.linkedin.com">LinkedIn</a></p>
-                </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169 2024 Ahmet Sari, All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
- </body>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Ahmet Sari</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <img src="./assets/profile-pic.png" alt="Ahmet Sari" class="hero-img" />
+    <h1>Software Engineering Co-op @ Electrify America</h1>
+    <p>Computer Science @ George Mason University</p>
+    <p class="subtitle">Software Engineering · AI & Privacy Research · Full-Stack Development</p>
+
+    <div class="hero-buttons">
+      <a href="./assets/ahmet_sari_resume.pdf" class="btn" target="_blank">View Resume</a>
+      <a href="#contact" class="btn secondary">Contact</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I’m a Computer Science student at George Mason University and currently a
+    <strong>Software Engineering Co-op at Electrify America</strong>, where I work
+    on real-world, production-level software systems.
+  </p>
+  <p>
+    My background spans full-stack development, applied machine learning, and
+    academic research across <strong>AI, computer vision, and data privacy</strong>.
+    I’ve contributed to both engineering-driven and research-driven projects,
+    translating theory into practical systems.
+  </p>
+  <p>
+    I enjoy building impactful software, collaborating with teams, and continuously
+    learning new technologies.
+  </p>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section gray">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Software Engineering Co-op</h3>
+    <span>Electrify America · Jan 2026 – Present</span>
+    <p>
+      Working on software engineering projects supporting large-scale EV charging
+      infrastructure and collaborating on production-level systems.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Research Assistant — Privacy & NLP</h3>
+    <span>Digital Forensics & Privacy Lab (UMIT²), George Mason University</span>
+    <p>
+      Built NLP pipelines to analyze Terms of Service and privacy policies, producing
+      structured JSON, CSV, and Markdown outputs for transparency benchmarking.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Research Assistant — AI & Computer Vision</h3>
+    <span>AI & Computer Vision Lab (InfoLab), George Mason University</span>
+    <p>
+      Conducted research on hallucination reduction in large vision-language models,
+      evaluating performance on CHAIR and AMBER benchmarks.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Student Research Assistant</h3>
+    <span>Office of Research, Innovation, and Analytics (ORIA), GMU</span>
+    <p>
+      Supported compliance reviews, data reporting, and operational workflows for
+      federally funded research projects.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>TechWise Fellow</h3>
+    <span>Google & Carnegie Mellon University</span>
+    <p>
+      Selected for a competitive Google-sponsored program focused on full-stack
+      development, machine learning, and applied software engineering.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Selected Projects</h2>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>GreensWrld — Smart Plant Care App</h3>
+      <p>
+        Flutter + Firebase application with AI-powered plant guidance, authentication,
+        dashboards, and an interactive map for discovering plant shops.
+      </p>
+      <a href="https://github.com/szulun/GreensWorld" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Predictive Student Performance</h3>
+      <p>
+        Machine learning models (XGBoost, ANN) trained on 1,000+ students to predict
+        graduation risk and analyze key academic factors.
+      </p>
+      <a href="https://github.com/ShawnASC5/Student-Performance-Factors" target="_blank">
+        View on GitHub
+      </a>
+    </div>
+
+    <div class="project-card">
+      <h3>Personal Finance Tracker</h3>
+      <p>
+        Java-based application for tracking expenses and visualizing spending trends.
+      </p>
+      <a href="https://github.com/mikey6002/Personal-Finance-Tracker" target="_blank">
+        View on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="leadership" class="section gray">
+  <h2>Leadership & Community Impact</h2>
+
+  <div class="card">
+    <h3>Founder & President — Blossom Together GMU</h3>
+    <p>
+      Lead a student-run humanitarian organization supporting global initiatives
+      including water well projects, cataract surgeries, and food distribution.
+      Coordinated fundraising efforts and managed volunteer teams.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:ahmetsari.codes@gmail.com">ahmetsari.codes@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/ahmetsr" target="_blank">linkedin.com/in/ahmetsr</a></p>
+  <p>GitHub: <a href="https://github.com/ahmetyellow" target="_blank">github.com/ahmetyellow</a></p>
+</section>
+
+<footer>
+  <p>© 2026 Ahmet Sari. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
